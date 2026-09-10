@@ -1,0 +1,156 @@
+{
+    "name": "Fardgramming-",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#booleans"
+        },
+        {
+            "include": "#types"
+        },
+        {
+            "include": "#conditionals"
+        },
+        {
+            "include": "#blocks"
+        },
+        {
+            "include": "#output"
+        },
+        {
+            "include": "#definitions"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#terminator"
+        }
+    ],
+
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line",
+                    "match": "/brownliquid.*$"
+                }
+            ]
+        },
+
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape",
+                            "match": "\\\\."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric",
+                    "match": "\\b\\d+(\\.\\d+)?\\b"
+                }
+            ]
+        },
+
+        "booleans": {
+            "patterns": [
+                {
+                    "name": "constant.language.boolean",
+                    "match": "\\b(facts_no_cap|cap)\\b"
+                }
+            ]
+        },
+
+        "types": {
+            "patterns": [
+                {
+                    "name": "storage.type",
+                    "match": "\\bj\\*b\\b"
+                }
+            ]
+        },
+
+        "conditionals": {
+            "patterns": [
+                {
+                    "name": "keyword.control",
+                    "match": "\\b(gru|no_no_square)\\b"
+                }
+            ]
+        },
+
+        "blocks": {
+            "patterns": [
+                {
+                    "name": "punctuation.section.block.begin",
+                    "match": "\\*griddy"
+                },
+                {
+                    "name": "punctuation.section.block.end",
+                    "match": "griddy\\*"
+                }
+            ]
+        },
+
+        "output": {
+            "patterns": [
+                {
+                    "name": "keyword.control",
+                    "match": "\\bpoopoo\\b"
+                }
+            ]
+        },
+
+        "definitions": {
+            "patterns": [
+                {
+                    "name": "keyword.other",
+                    "match": "\\b(ts|mf|be|rn|frfr)\\b"
+                }
+            ]
+        },
+
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator",
+                    "match": "\\ble equal\\b"
+                },
+                {
+                    "name": "keyword.operator",
+                    "match": "\\biz\\b"
+                }
+            ]
+        },
+
+        "terminator": {
+            "patterns": [
+                {
+                    "name": "punctuation.terminator.statement",
+                    "match": "\\blmao\\b"
+                }
+            ]
+        }
+    },
+
+    "scopeName": "source.fard"
+}

@@ -1,0 +1,36 @@
+{
+    "name": "fardgramming",
+    "displayName": "Fardgramming-",
+    "description": "Language support for the Fardgramming- programming language.",
+    "version": "0.0.1",
+    "publisher": "Fard Inc.",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "onLanguage:fardgramming"
+    ],
+
+    "contributes": {
+        "languages": [
+            {
+                "id": "fardgramming",
+                "aliases": [
+                    "Fardgramming-",
+                    "fardgramming"
+                ],
+                "extensions": [
+                    ".fard"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fardgramming",
+                "scopeName": "source.fard",
+                "path": "./syntaxes/fardgramming.tmLanguage.json"
+            }
+        ]
+    }
+}
