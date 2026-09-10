@@ -18,6 +18,7 @@ Let's start with the classic:
 
 ```fard
 poopoo "Hello world" lmao
+```
 
 This prints:
 
@@ -29,7 +30,9 @@ lmao = ends the statement
 
 So:
 
+```fard
 poopoo "Hello world" lmao
+```
 
 basically means:
 
@@ -46,14 +49,18 @@ to define a variable.
 
 Example:
 
+```
 ts mf score be 0 rn frfr lmao
+```
 
 This creates a variable called score with a value of 0.
 
 You can also create variables with other values:
 
+```
 ts mf John be 9 rn frfr lmao
 ts mf Mike be 8 rn frfr lmao
+```
 
 Now:
 
@@ -65,13 +72,17 @@ You can change the value of a variable using normal operators.
 
 For example:
 
+```
 score + 1 lmao
+```
 
 adds 1 to score.
 
 And:
 
+```
 score - 1 lmao
+```
 
 subtracts 1 from score.
 
@@ -81,12 +92,15 @@ Functions let you group code together so you can run it whenever you want.
 
 A function starts with:
 
+```
 lit j*b FUNCTION_NAME iz crazyy lmao
+```
 
 and uses *griddy and griddy* for its block.
 
 Example:
 
+```
 lit j*b hello iz crazyy lmao
 *griddy
     do ts lazyahh lmao
@@ -94,33 +108,41 @@ lit j*b hello iz crazyy lmao
         poopoo "Hello!" lmao
     griddy*
 griddy*
+```
 
 Functions can then be called with:
 
+```
 do j*b hello sonion lmao
+```
 5. If Statements
 
 Use gru for an if statement.
 
 Example:
 
+```
 gru score le equal 10
 *griddy
     poopoo "You got 10!" lmao
 griddy*
+```
 
 This means:
 
+```
 if score == 10
     print "You got 10!"
-Else If
+```
 
 Use:
 
 no_no_square gru
+for else if
 
 Example:
 
+```
 gru score le equal 10
 *griddy
     poopoo "You got 10!" lmao
@@ -129,14 +151,16 @@ no_no_square gru score le equal 20
 *griddy
     poopoo "You got 20!" lmao
 griddy*
-Else
+```
 
 Use:
 
 no_no_square
+for else
 
 Example:
 
+```
 gru score le equal 10
 *griddy
     poopoo "You got 10!" lmao
@@ -145,6 +169,7 @@ no_no_square
 *griddy
     poopoo "You didn't get 10." lmao
 griddy*
+```
 6. Comparing Things
 
 Fardgramming- uses:
@@ -351,8 +376,9 @@ Think of *griddy and griddy* like { and } in C++.
 
 17. Complete Example
 
-Here's a full Fardgramming- program:
+Here's a full Fardgramming- example program:
 
+```
 ts mf score be 0 rn frfr lmao
 ts mf John be 9 rn frfr lmao
 ts mf Mike be 8 rn frfr lmao
@@ -413,6 +439,7 @@ ohio3am lmao
 griddy*
 
 subway_surfers_bussin lmao
+```
 18. Compiling Your Program
 
 Once you have a .fard file, you can compile it using the Fardgramming- Fardpiler.
@@ -474,10 +501,5 @@ Just learn the Fard.
 Then, when you're ready, you can learn what's happening underneath the Fardpiler.
 
 Happy fardpiling.
-
-
-One thing I'd **double-check before committing this README**: the current `pee` syntax and exact behavior. Your example uses `pee John`, but if the Fardpiler currently translates that in a particular way, we should document the *actual* semantics rather than guessing.
-
-Other than that, this would make a **really solid beginner-facing README**.
 
 
